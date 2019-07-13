@@ -2,4 +2,4 @@
 # BackendLayout collection         #
 ####################################
 
-@import 'EXT:basetemplate9/Configuration/TSconfig/Page/BackendLayouts/*.tsconfig'
+@import 'EXT:basetemplate10/Configuration/TSconfig/Page/BackendLayouts/*.tsconfig'

@@ -1,12 +1,12 @@
-@import 'EXT:basetemplate9/Configuration/TypoScript/constants/*.typoscript'
+@import 'EXT:basetemplate10/Configuration/TypoScript/constants/*.typoscript'
 
-plugin.tx_basetemplate9 {
-    #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:constants.label.websiteName
+plugin.tx_basetemplate10 {
+    #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate10/Resources/Private/Language/locallang_be.xlf:constants.label.websiteName
     websiteName = My fancy website
-    #cat=Website Templates/text/20; type=string;label=LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:constants.label.defaultDescription
+    #cat=Website Templates/text/20; type=string;label=LLL:EXT:basetemplate10/Resources/Private/Language/locallang_be.xlf:constants.label.defaultDescription
     defaultMetaDescription =
-    #cat=Website Templates/text/30; type=string;label=LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:constants.label.defaultKeywords
+    #cat=Website Templates/text/30; type=string;label=LLL:EXT:basetemplate10/Resources/Private/Language/locallang_be.xlf:constants.label.defaultKeywords
     defaultMetaKeywords =
-    #cat=Website Templates/text/40; type=string;label=LLL:EXT:basetemplate9/Resources/Private/Language/locallang_be.xlf:constants.label.headerComment
+    #cat=Website Templates/text/40; type=string;label=LLL:EXT:basetemplate10/Resources/Private/Language/locallang_be.xlf:constants.label.headerComment
     headerComment =
 }

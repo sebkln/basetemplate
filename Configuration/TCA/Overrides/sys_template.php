@@ -2,7 +2,7 @@
 defined('TYPO3_MODE') or die();
 
 call_user_func(function () {
-    $extensionKey = 'basetemplate9';
+    $extensionKey = 'basetemplate10';
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
         $extensionKey,
