@@ -1,8 +1,8 @@
 ![Rocket ship symbol](Resources/Public/Icons/Extension.svg)
 
-# Templating Starter Kit for TYPO3 v10 LTS
+# Templating Starter Kit for TYPO3 v11 LTS
 
-## Introduction 
+## Introduction
 
 It is considered good practice to save anything related to your website theme
 in a separate extension (a so-called *Site package*):
@@ -16,7 +16,7 @@ in a separate extension (a so-called *Site package*):
 - overrides of the TYPO3 core, e.g. new database fields
 
 This TYPO3 extension can be a base for your website configuration.
-Add your Stylesheets, JavaScripts and templates, adapt the supplied configurations to your needs. 
+Add your Stylesheets, JavaScripts and templates, adapt the supplied configurations to your needs.
 
 It will not impose any Frontend Framework on you. You're free to use your favourite Framework or custom templates.
 
@@ -42,9 +42,9 @@ This will provide you with a complete integration of Bootstrap in TYPO3.
 
 1. Copy this extension into the folder `typo3conf/ext/` of your TYPO3 installation.
 2. You may want to rename the extension.
-    1. Rename the folder from `basetemplate10` to your desired name, e.g. `clientname`.
+    1. Rename the folder from `basetemplate11` to your desired name, e.g. `clientname`.
     **Keep the naming conventions for extensions in mind!**<sup>[1](#namingconvention)</sup>
-    2. Search and replace all occurences of `basetemplate10` with the new chosen name.
+    2. Search and replace all occurences of `basetemplate11` with the new chosen name.
     Replacing is fast and easy if you use a professional text editor and don't use underscores.<sup>[2](#underscores)</sup>
 3. Open the **Extension Manager** in the TYPO3 backend and install the extension.
 4. Include the *Static Template* of this extension in your TypoScript root template (`sys_template`).
@@ -77,9 +77,9 @@ page.10 {
         key.data = pagelayout
         // Important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
         pagets__2_columns_66_33 = TEXT
-        pagets__2_columns_66_33.value = EXT:basetemplate10/Resources/Private/Templates/2Columns-66-33.html
+        pagets__2_columns_66_33.value = EXT:basetemplate11/Resources/Private/Templates/2Columns-66-33.html
         default = TEXT
-        default.value = EXT:basetemplate10/Resources/Private/Templates/1Column.html
+        default.value = EXT:basetemplate11/Resources/Private/Templates/1Column.html
     }
 }
 ````
@@ -122,7 +122,7 @@ should be stored in `Configuration/TypoScript/plugin/plugin.[extensionKey].typos
 ### Syntax highlighting
 With TYPO3 version 8.7.2, the file extensions *.typoscript* and *.tsconfig* have become the new defaults.
 Add these to your editor to benefit from TypoScript syntax highlighting again.
-In PhpStorm, open **Settings/Preferences** and add the patterns `*.typoscript` and `*.tsconfig` to TypoScript in **Editor | Code Style**. 
+In PhpStorm, open **Settings/Preferences** and add the patterns `*.typoscript` and `*.tsconfig` to TypoScript in **Editor | Code Style**.
 
 
 ### Footnotes

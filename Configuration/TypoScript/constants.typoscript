@@ -1,8 +1,8 @@
-@import 'EXT:basetemplate10/Configuration/TypoScript/constants/*.typoscript'
+@import 'EXT:basetemplate11/Configuration/TypoScript/constants/*.typoscript'
 
-plugin.tx_basetemplate10 {
-    #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate10/Resources/Private/Language/locallang_be.xlf:constants.label.websiteName
+plugin.tx_basetemplate11 {
+    #cat=Website Templates/text/10; type=string;label=LLL:EXT:basetemplate11/Resources/Private/Language/locallang_be.xlf:constants.label.websiteName
     websiteName = My fancy website
-    #cat=Website Templates/text/20; type=string;label=LLL:EXT:basetemplate10/Resources/Private/Language/locallang_be.xlf:constants.label.headerComment
+    #cat=Website Templates/text/20; type=string;label=LLL:EXT:basetemplate11/Resources/Private/Language/locallang_be.xlf:constants.label.headerComment
     headerComment =
 }

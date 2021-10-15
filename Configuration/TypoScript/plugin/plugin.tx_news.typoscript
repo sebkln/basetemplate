@@ -8,12 +8,12 @@ plugin.tx_news {
         partialRootPaths >
         partialRootPaths {
             10 = EXT:news/Resources/Private/Partials/
-            20 = EXT:basetemplate10/Resources/Private/EXT/news/Partials/
+            20 = EXT:basetemplate11/Resources/Private/EXT/news/Partials/
         }
         templateRootPaths >
         templateRootPaths {
             10 = EXT:news/Resources/Private/Templates/
-            20 = EXT:basetemplate10/Resources/Private/EXT/news/Templates/
+            20 = EXT:basetemplate11/Resources/Private/EXT/news/Templates/
         }
     }
 
