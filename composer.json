@@ -1,7 +1,7 @@
 {
-	"name": "sebkln/basetemplate11",
+	"name": "sebkln/basetemplate",
 	"type": "typo3-cms-extension",
-	"description": "Templating Starter Kit for TYPO3 v11 LTS. Use it as a base for your website configuration. Add all your Stylesheets, JavaScripts and Templates.",
+	"description": "Templating Starter Kit for TYPO3 CMS. Use it as a base for your website configuration. Add all your Stylesheets, JavaScripts and Templates.",
 	"license": [
 		"GPL-2.0-or-later"
 	],
@@ -22,17 +22,13 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": ">=11.5.0 <11.5.99",
-		"typo3/cms-recycler": ">=11.5.0 <11.5.99",
-		"typo3/cms-seo": ">=11.5.0 <11.5.99"
-	},
-	"replace": {
-		"sebkln/basetemplate11": "self.version",
-		"typo3-ter/basetemplate11": "self.version"
+		"typo3/cms-core": ">=12.1.3 <12.4.99",
+		"typo3/cms-recycler": ">=12.1.3 <12.4.99",
+		"typo3/cms-seo": ">=12.1.3 <12.4.99"
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "basetemplate11"
+			"extension-key": "basetemplate"
 		}
 	}
 }

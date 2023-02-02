@@ -1,10 +1,13 @@
 <?php
-defined('TYPO3_MODE') or die();
 
-call_user_func(function () {
-    \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addUserTSConfig(
-        '@import "EXT:basetemplate11/Configuration/TSconfig/User.tsconfig"'
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
+defined('TYPO3') or die();
+
+call_user_func(static function () {
+    ExtensionManagementUtility::addUserTSConfig(
+        '@import "EXT:basetemplate/Configuration/TSconfig/User.tsconfig"'
     );
 });
 
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['basetemplate11_rte'] = 'EXT:basetemplate11/Configuration/RTE/Custom.yaml';
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['basetemplate_rte'] = 'EXT:basetemplate/Configuration/RTE/Custom.yaml';

@@ -1,6 +1,6 @@
 config {
-    headerComment = {$plugin.tx_basetemplate11.headerComment}
-    headerComment.if.isTrue = {$plugin.tx_basetemplate11.headerComment}
+    headerComment = {$plugin.tx_basetemplate.headerComment}
+    headerComment.if.isTrue = {$plugin.tx_basetemplate.headerComment}
 
 
     /*
@@ -53,14 +53,14 @@ config {
 
     // Append website name to title.
     // If a SEO title for a page is used, we don't want to append the website name automatically:
-    pageTitle.noTrimWrap = ## | {$plugin.tx_basetemplate11.websiteName}#
+    pageTitle.noTrimWrap = ## | {$plugin.tx_basetemplate.websiteName}#
     pageTitle.noTrimWrap.splitChar = #
     pageTitle.noTrimWrap.if.isFalse.data = page:seo_title
 }
 
 
 // Don't append website name to news records with an alternative title:
-[request.getQueryParams() ['tx_news_pi1'] > 0]
+[traverse(request.getQueryParams(), 'tx_news_pi1/news') > 0]
     config.pageTitle.noTrimWrap.if.isFalse {
         data >
         dataWrap = DB:tx_news_domain_model_news:{GP:tx_news_pi1|news}:alternative_title

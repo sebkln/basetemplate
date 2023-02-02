@@ -1,8 +1,8 @@
 styles {
     templates {
-        templateRootPath = EXT:basetemplate11/Resources/Private/EXT/fluid_styled_content/Templates/
-        partialRootPath = EXT:basetemplate11/Resources/Private/EXT/fluid_styled_content/Partials/
-        layoutRootPath = EXT:basetemplate11/Resources/Private/EXT/fluid_styled_content/Layouts/
+        templateRootPath = EXT:basetemplate/Resources/Private/EXT/fluid_styled_content/Templates/
+        partialRootPath = EXT:basetemplate/Resources/Private/EXT/fluid_styled_content/Partials/
+        layoutRootPath = EXT:basetemplate/Resources/Private/EXT/fluid_styled_content/Layouts/
     }
 
     content {

@@ -1,7 +1,7 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Templating Starter Kit for TYPO3 v11 LTS',
+    'title' => 'Templating Starter Kit for TYPO3 CMS',
     'description' => 'Use it as a base for your website configuration. Add all your Stylesheets, JavaScripts and Templates.',
     'version' => '1.0.0',
     'state' => 'stable',
@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'sebastian@sebkln.de',
     'constraints' => [
         'depends' => [
-            'typo3' => '11.5.0-11.5.99',
+            'typo3' => '12.1.3-12.4.99',
             'recycler' => '',
             'seo' => '',
         ],

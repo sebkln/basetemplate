@@ -1,1 +1,1 @@
-@import 'EXT:basetemplate11/Configuration/TSconfig/User/*.tsconfig'
+@import 'EXT:basetemplate/Configuration/TSconfig/User/*.tsconfig'

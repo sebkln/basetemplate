@@ -3,11 +3,11 @@
 # MAIN SETUP                      #
 ###################################
 
-@import 'EXT:basetemplate11/Configuration/TypoScript/Helper/*.typoscript'
-@import 'EXT:basetemplate11/Configuration/TypoScript/lib/*.typoscript'
-@import 'EXT:basetemplate11/Configuration/TypoScript/plugin/*.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/lib/*.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/plugin/*.typoscript'
 
-@import 'EXT:basetemplate11/Configuration/TypoScript/config.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/config.typoscript'
 
 
 
@@ -19,7 +19,7 @@ page {
     meta < lib.meta
 
     includeCSS {
-        style = EXT:basetemplate11/Resources/Public/Css/style.min.css
+        style = EXT:basetemplate/Resources/Public/Css/style.min.css
         style.media = all
     }
 
@@ -36,25 +36,25 @@ page {
             key.data = pagelayout
             // Important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
             pagets__1_column = TEXT
-            pagets__1_column.value = EXT:basetemplate11/Resources/Private/Templates/1Column.html
+            pagets__1_column.value = EXT:basetemplate/Resources/Private/Templates/1Column.html
             pagets__2_columns_50_50 = TEXT
-            pagets__2_columns_50_50.value = EXT:basetemplate11/Resources/Private/Templates/2Columns-50-50.html
+            pagets__2_columns_50_50.value = EXT:basetemplate/Resources/Private/Templates/2Columns-50-50.html
             pagets__2_columns_66_33 = TEXT
-            pagets__2_columns_66_33.value = EXT:basetemplate11/Resources/Private/Templates/2Columns-66-33.html
+            pagets__2_columns_66_33.value = EXT:basetemplate/Resources/Private/Templates/2Columns-66-33.html
             pagets__2_columns_33_66 = TEXT
-            pagets__2_columns_33_66.value = EXT:basetemplate11/Resources/Private/Templates/2Columns-33-66.html
+            pagets__2_columns_33_66.value = EXT:basetemplate/Resources/Private/Templates/2Columns-33-66.html
             pagets__3_columns = TEXT
-            pagets__3_columns.value = EXT:basetemplate11/Resources/Private/Templates/3Columns.html
+            pagets__3_columns.value = EXT:basetemplate/Resources/Private/Templates/3Columns.html
             default = TEXT
-            default.value = EXT:basetemplate11/Resources/Private/Templates/1Column.html
+            default.value = EXT:basetemplate/Resources/Private/Templates/1Column.html
         }
 
         layoutRootPaths {
-            10 = EXT:basetemplate11/Resources/Private/Layouts/
+            10 = EXT:basetemplate/Resources/Private/Layouts/
         }
 
         partialRootPaths {
-            10 = EXT:basetemplate11/Resources/Private/Partials/
+            10 = EXT:basetemplate/Resources/Private/Partials/
         }
 
         variables {
