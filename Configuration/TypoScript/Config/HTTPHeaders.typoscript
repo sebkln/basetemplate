@@ -1,0 +1,34 @@
+//
+// HTTP header configuration
+// ------------------------------------------
+config {
+    //
+    // HTTP SECURITY HEADERS
+    //
+    // More information: https://www.owasp.org/index.php/OWASP_Secure_Headers_Project
+    // Test tool: https://securityheaders.com/
+    // ------------------------------------------
+    additionalHeaders.10.header = Strict-Transport-Security: max-age=31536000; includeSubDomains
+    additionalHeaders.20.header = X-Content-Type-Options: nosniff
+    additionalHeaders.30.header = X-Powered-By: nothing
+    additionalHeaders.40.header = Referrer-Policy: strict-origin-when-cross-origin
+
+
+    // Permissions-Policy Header
+    //
+    // Note: This HTTP header was formerly named 'Feature-Policy', which can be set additionally as a fallback.
+    // Use it to enable, disable or modify browser API features, e.g. camera access.
+    // More information: https://www.smashingmagazine.com/2018/12/feature-policy/
+    // The following example policies will simply disable some features.
+    // ------------------------------------------
+    # additionalHeaders.50.header = Permissions-Policy: geolocation=(), midi=(), camera=(), usb=(), magnetometer=(), accelerometer=(), vr=(), speaker=(), ambient-light-sensor=(), gyroscope=(), microphone=()
+    # additionalHeaders.51.header = Feature-Policy: geolocation 'none'; midi 'none'; camera 'none'; usb 'none'; magnetometer 'none'; accelerometer 'none'; vr 'none'; speaker 'none'; ambient-light-sensor 'none'; gyroscope 'none'; microphone 'none'
+
+
+    // Content-Security-Policy Header
+    //
+    // A more complex HTTP header which needs individual(!) configuration for each website.
+    // More information: https://scotthelme.co.uk/content-security-policy-an-introduction/
+    // ------------------------------------------
+    additionalHeaders.60.header = Content-Security-Policy: frame-ancestors 'none'
+}

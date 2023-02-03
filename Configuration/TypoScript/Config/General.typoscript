@@ -1,0 +1,24 @@
+//
+// General configuration
+// ------------------------------------------
+config {
+    headerComment = {$plugin.tx_basetemplate.headerComment}
+    headerComment.if.isTrue = {$plugin.tx_basetemplate.headerComment}
+
+
+    // Prefixing all links to get absolute link paths (i.e mandatory for RSS feeds from EXT:news):
+    absRefPrefix = /
+    linkVars = L(0-1)
+    prefixLocalAnchors = all
+
+
+    // Write the email address in Unicode. This works even without JavaScript enabled!
+    spamProtectEmailAddresses = ascii
+    // Replace the @ with this string to further mock spam bots:
+    spamProtectEmailAddresses_atSubst = <span style='display:none'>whatever</span>@
+
+
+    // Deactivate all HTML comments from TYPO3, e.g.:
+    // <!--  CONTENT ELEMENT, uid:37/text [begin] -->
+    disablePrefixComment = 1
+}

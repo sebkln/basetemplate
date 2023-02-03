@@ -1,7 +1,3 @@
-####################################
-# EXT:news CONSTANTS               #
-####################################
-
 # plugin.tx_news {
 #     // RSS feed:
 #     rss.channel {

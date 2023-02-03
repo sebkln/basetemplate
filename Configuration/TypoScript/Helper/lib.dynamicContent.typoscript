@@ -1,17 +1,14 @@
-####################################
-# Dynamic content in Fluid         #
-####################################
-/*
- * Render content in Fluid templates in a variable way.
- *
- * All data values are optional. By default, colPos '0' of the current page is rendered.
- *
- * Examples:
- * <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '10'}"/>
- * <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0', wrap: '<div class=\"hero\">|</div>', elementWrap: '<div class=\"element\">|</div>'}" />
- *
- * Source: bootstrap_package
- */
+//
+// Dynamic content rendering in Fluid
+//
+// All data values are optional. By default, colPos '0' of the current page is rendered.
+//
+// Examples:
+// <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '10'}"/>
+// <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{pageUid: '{data.uid}', colPos: '0', wrap: '<div class=\"hero\">|</div>', elementWrap: '<div class=\"element\">|</div>'}" />
+//
+// Source: bootstrap_package
+// ------------------------------------------
 lib.dynamicContent = COA
 lib.dynamicContent {
     5 = LOAD_REGISTER
@@ -83,11 +80,9 @@ lib.dynamicContent {
 }
 
 
-/*
- * This helper extends the above with 'content slide':
- * If no content element is found by the select command,
- * each parent page will be searched for content, up to the root page.
- * The content found first will be rendered.
-*/
+// This helper extends the above with 'content slide':
+// If no content element is found by the select command,
+// each parent page will be searched for content, up to the root page.
+// The content found first will be rendered.
 lib.dynamicContentSlide =< lib.dynamicContent
 lib.dynamicContentSlide.20.slide = -1

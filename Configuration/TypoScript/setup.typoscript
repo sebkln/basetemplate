@@ -1,88 +1,9 @@
-###################################
-# Starter template TYPO3 v11 LTS  #
-# MAIN SETUP                      #
-###################################
-
+//
+// Project setup
+// ------------------------------------------
+@import 'EXT:basetemplate/Configuration/TypoScript/Config/*.typoscript'
 @import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/lib/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/plugin/*.typoscript'
-
-@import 'EXT:basetemplate/Configuration/TypoScript/config.typoscript'
-
-
-
-
-page = PAGE
-page {
-    typeNum = 0
-
-    meta < lib.meta
-
-    includeCSS {
-        style = EXT:basetemplate/Resources/Public/Css/style.min.css
-        style.media = all
-    }
-
-    // include JavaScript before </body>:
-    includeJSFooterlibs {
-
-    }
-
-    10 = FLUIDTEMPLATE
-    10 {
-        file.stdWrap.cObject = CASE
-        file.stdWrap.cObject {
-            // select a layout template depending on the page's BackendLayout:
-            key.data = pagelayout
-            // Important! If you set BackendLayouts through TSconfig, you MUST use the prefix 'pagets__':
-            pagets__1_column = TEXT
-            pagets__1_column.value = EXT:basetemplate/Resources/Private/Templates/1Column.html
-            pagets__2_columns_50_50 = TEXT
-            pagets__2_columns_50_50.value = EXT:basetemplate/Resources/Private/Templates/2Columns-50-50.html
-            pagets__2_columns_66_33 = TEXT
-            pagets__2_columns_66_33.value = EXT:basetemplate/Resources/Private/Templates/2Columns-66-33.html
-            pagets__2_columns_33_66 = TEXT
-            pagets__2_columns_33_66.value = EXT:basetemplate/Resources/Private/Templates/2Columns-33-66.html
-            pagets__3_columns = TEXT
-            pagets__3_columns.value = EXT:basetemplate/Resources/Private/Templates/3Columns.html
-            default = TEXT
-            default.value = EXT:basetemplate/Resources/Private/Templates/1Column.html
-        }
-
-        layoutRootPaths {
-            10 = EXT:basetemplate/Resources/Private/Layouts/
-        }
-
-        partialRootPaths {
-            10 = EXT:basetemplate/Resources/Private/Partials/
-        }
-
-        variables {
-
-        }
-
-        dataProcessing {
-            // Main navigation:
-            10 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            10 {
-                special = directory
-                special.value = 1
-                levels = 3
-                includeSpacer = 0
-                as = mainNavigation
-            }
-
-            // Meta navigation in footer:
-            /*
-            20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
-            20 {
-            special = directory
-            special.value = 123
-            levels = 2
-            includeSpacer = 0
-            as = metaNavigation
-            }
-            */
-        }
-    }
-}
+@import 'EXT:basetemplate/Configuration/TypoScript/Lib/*.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/Extensions/*.typoscript'
+#@import 'EXT:basetemplate/Configuration/TypoScript/ContentElements/*.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/Page/Page.typoscript'
