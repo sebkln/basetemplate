@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2017-07-17T19:53:16Z"
-          product-name="basetemplate">
-        <header/>
-        <body>
-            <trans-unit id="styles.align.left">
-                <source>Align left</source>
-                <target>linksbündig</target>
-            </trans-unit>
-            <trans-unit id="styles.align.center">
-                <source>Align center</source>
-                <target>zentrieren</target>
-            </trans-unit>
-            <trans-unit id="styles.align.right">
-                <source>Align right</source>
-                <target>rechtsbündig</target>
-            </trans-unit>
-            <trans-unit id="styles.align.justify">
-                <source>Align justify</source>
-                <target>Blocksatz</target>
-            </trans-unit>
-            <trans-unit id="styles.p.intro">
-                <source>Introduction</source>
-                <target>Einleitung</target>
-            </trans-unit>
-            <trans-unit id="styles.list.checkmark">
-                <source>Checkmark list</source>
-                <target>Häkchen-Liste</target>
-            </trans-unit>
-            <trans-unit id="styles.table.striped">
-                <source>Table (striped)</source>
-                <target>Tabelle (gestreift)</target>
-            </trans-unit>
-            <trans-unit id="styles.table.bordered">
-                <source>Table (bordered)</source>
-                <target>Tabelle (umrahmt)</target>
-            </trans-unit>
-            <trans-unit id="styles.table.combined">
-                <source>Table (striped + bordered)</source>
-                <target>Tabelle (gestreift + umrahmt)</target>
-            </trans-unit>
-        </body>
-    </file>
+	<file source-language="en" datatype="plaintext" original="messages" date="2017-07-17T19:53:16Z"
+		  product-name="basetemplate">
+		<header/>
+		<body>
+			<trans-unit id="styles.align.left" approved="yes">
+				<source>Align left</source>
+				<target>linksbündig</target>
+			</trans-unit>
+			<trans-unit id="styles.align.center" approved="yes">
+				<source>Align center</source>
+				<target>zentrieren</target>
+			</trans-unit>
+			<trans-unit id="styles.align.right" approved="yes">
+				<source>Align right</source>
+				<target>rechtsbündig</target>
+			</trans-unit>
+			<trans-unit id="styles.align.justify" approved="yes">
+				<source>Align justify</source>
+				<target>Blocksatz</target>
+			</trans-unit>
+			<trans-unit id="styles.p.intro" approved="yes">
+				<source>Introduction</source>
+				<target>Einleitung</target>
+			</trans-unit>
+			<trans-unit id="styles.list.checkmark" approved="yes">
+				<source>Checkmark list</source>
+				<target>Häkchen-Liste</target>
+			</trans-unit>
+			<trans-unit id="styles.table.striped" approved="yes">
+				<source>Table (striped)</source>
+				<target>Tabelle (gestreift)</target>
+			</trans-unit>
+			<trans-unit id="styles.table.bordered" approved="yes">
+				<source>Table (bordered)</source>
+				<target>Tabelle (umrahmt)</target>
+			</trans-unit>
+			<trans-unit id="styles.table.combined" approved="yes">
+				<source>Table (striped + bordered)</source>
+				<target>Tabelle (gestreift + umrahmt)</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>

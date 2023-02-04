@@ -1,89 +1,89 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <xliff version="1.0">
-    <file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
-          product-name="basetemplate" target-language="de">
-        <header/>
-        <body>
-            <trans-unit id="constants.label.websiteName">
-                <source>The website's name (in title tag and Open Graph meta tag)</source>
-                <target>Der Name der Website (für das title-Tag und Open Graph Meta-Element)</target>
-            </trans-unit>
-            <trans-unit id="constants.label.headerComment">
-                <source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
-                <target>Ergänze einen Copyright-Hinweis im Quelltext (als Teil des TYPO3 Kommentars)</target>
-            </trans-unit>
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
+		  product-name="basetemplate" target-language="de">
+		<header/>
+		<body>
+			<trans-unit id="constants.label.websiteName" approved="yes">
+				<source>The website's name (in title tag and Open Graph meta tag)</source>
+				<target>Der Name der Website (für das title-Tag und Open Graph Meta-Element)</target>
+			</trans-unit>
+			<trans-unit id="constants.label.headerComment" approved="yes">
+				<source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
+				<target>Ergänze einen Copyright-Hinweis im Quelltext (als Teil des TYPO3 Kommentars)</target>
+			</trans-unit>
 
 
-            <trans-unit id="header_layout.altLabels.1">
-                <source>(h1) Page headline</source>
-                <target>(h1) Seitenüberschrift</target>
-            </trans-unit>
-            <trans-unit id="header_layout.altLabels.2">
-                <source>(h2) Content headline</source>
-                <target>(h2) Inhaltsüberschrift</target>
-            </trans-unit>
-            <trans-unit id="header_layout.altLabels.3">
-                <source>(h3) Subline</source>
-                <target>(h3) Zwischenüberschrift</target>
-            </trans-unit>
-            <trans-unit id="header_layout.altLabels.4">
-                <source>(h4) Smaller subline</source>
-                <target>(h4) Kleine Zwischenüberschrift</target>
-            </trans-unit>
-            <trans-unit id="header_layout.altLabels.100">
-                <source>Hidden</source>
-                <target>Verborgen</target>
-            </trans-unit>
+			<trans-unit id="header_layout.altLabels.1" approved="yes">
+				<source>(h1) Page headline</source>
+				<target>(h1) Seitenüberschrift</target>
+			</trans-unit>
+			<trans-unit id="header_layout.altLabels.2" approved="yes">
+				<source>(h2) Content headline</source>
+				<target>(h2) Inhaltsüberschrift</target>
+			</trans-unit>
+			<trans-unit id="header_layout.altLabels.3" approved="yes">
+				<source>(h3) Subline</source>
+				<target>(h3) Zwischenüberschrift</target>
+			</trans-unit>
+			<trans-unit id="header_layout.altLabels.4" approved="yes">
+				<source>(h4) Smaller subline</source>
+				<target>(h4) Kleine Zwischenüberschrift</target>
+			</trans-unit>
+			<trans-unit id="header_layout.altLabels.100" approved="yes">
+				<source>Hidden</source>
+				<target>Verborgen</target>
+			</trans-unit>
 
 
-            <trans-unit id="BackendLayouts.title.1_column">
-                <source>1 column (default)</source>
-                <target>1-spaltig (Standard)</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.title.3_columns">
-                <source>3 columns</source>
-                <target>3 Spalten</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.title.2_columns_66_33">
-                <source>2 columns (66/33)</source>
-                <target>2-spaltig (66/33)</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.title.2_columns_33_66">
-                <source>2 columns (33/66)</source>
-                <target>2-spaltig (33/66)</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.title.2_columns_50_50">
-                <source>2 columns (50/50)</source>
-                <target>2-spaltig (50/50)</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.main">
-                <source>Main content</source>
-                <target>Hauptspalte</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.sidebar">
-                <source>Sidebar</source>
-                <target>Seitenleiste</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.top">
-                <source>Top</source>
-                <target>Oben</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.bottom">
-                <source>Bottom</source>
-                <target>Unten</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.left">
-                <source>Left column</source>
-                <target>Linke Spalte</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.middle">
-                <source>Middle column</source>
-                <target>Mittlere Spalte</target>
-            </trans-unit>
-            <trans-unit id="BackendLayouts.column.right">
-                <source>Right column</source>
-                <target>Rechte Spalte</target>
-            </trans-unit>
-        </body>
-    </file>
+			<trans-unit id="BackendLayouts.title.1_column" approved="yes">
+				<source>1 column (default)</source>
+				<target>1-spaltig (Standard)</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.title.3_columns" approved="yes">
+				<source>3 columns</source>
+				<target>3 Spalten</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.title.2_columns_66_33" approved="yes">
+				<source>2 columns (66/33)</source>
+				<target>2-spaltig (66/33)</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.title.2_columns_33_66" approved="yes">
+				<source>2 columns (33/66)</source>
+				<target>2-spaltig (33/66)</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.title.2_columns_50_50" approved="yes">
+				<source>2 columns (50/50)</source>
+				<target>2-spaltig (50/50)</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.main" approved="yes">
+				<source>Main content</source>
+				<target>Hauptspalte</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.sidebar" approved="yes">
+				<source>Sidebar</source>
+				<target>Seitenleiste</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.top" approved="yes">
+				<source>Top</source>
+				<target>Oben</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.bottom" approved="yes">
+				<source>Bottom</source>
+				<target>Unten</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.left" approved="yes">
+				<source>Left column</source>
+				<target>Linke Spalte</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.middle" approved="yes">
+				<source>Middle column</source>
+				<target>Mittlere Spalte</target>
+			</trans-unit>
+			<trans-unit id="BackendLayouts.column.right" approved="yes">
+				<source>Right column</source>
+				<target>Rechte Spalte</target>
+			</trans-unit>
+		</body>
+	</file>
 </xliff>
