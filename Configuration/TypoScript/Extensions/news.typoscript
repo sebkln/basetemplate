@@ -1,0 +1,21 @@
+plugin.tx_news {
+    settings {
+        // Remove default stylesheet:
+        cssFile >
+
+        // Remove placeholder image:
+        displayDummyIfNoMedia = 0
+    }
+
+
+    // Modify translation:
+    _LOCAL_LANG {
+        default {
+            # dateFormat = %B %e, %Y
+        }
+
+        de {
+            # dateFormat = %d.%m.%Y
+        }
+    }
+}

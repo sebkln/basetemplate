@@ -1,4 +1,10 @@
 //
+// Dependencies
+// ------------------------------------------
+#@import 'EXT:news/Configuration/TypoScript/constants.typoscript'
+
+
+//
 // Project constants
 // ------------------------------------------
 @import 'EXT:basetemplate/Configuration/TypoScript/Constants/*.typoscript'

@@ -1,4 +1,10 @@
 //
+// Dependencies
+// ------------------------------------------
+#@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+
+
+//
 // Project setup
 // ------------------------------------------
 @import 'EXT:basetemplate/Configuration/TypoScript/Config/*.typoscript'
