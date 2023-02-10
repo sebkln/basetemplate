@@ -1,7 +1,6 @@
-####################################
-# BackendLayout: 3 columns         #
-####################################
-
+//
+// BackendLayout: 3 columns
+// ------------------------------------------
 mod.web_layout.BackendLayouts {
     3_columns {
         title = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.3_columns

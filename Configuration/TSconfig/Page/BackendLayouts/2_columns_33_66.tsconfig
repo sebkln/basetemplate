@@ -1,7 +1,6 @@
-####################################
-# BackendLayout: 33/66             #
-####################################
-
+//
+// BackendLayout: 2 columns, 33%/66% width
+// ------------------------------------------
 mod.web_layout.BackendLayouts {
     2_columns_33_66 {
         title = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.2_columns_33_66

@@ -1,5 +1,0 @@
-####################################
-# BackendLayout collection         #
-####################################
-
-@import 'EXT:basetemplate/Configuration/TSconfig/Page/BackendLayouts/*.tsconfig'

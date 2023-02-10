@@ -1,8 +1,20 @@
-####################################
-# Backend module configuration     #
-####################################
+//
+// Backend module configuration
+// ------------------------------------------
 
-mod {
-    web_list.enableDisplayBigControlPanel = activated
-    web_list.enableClipBoard = activated
+//
+// Web > Page
+//
+mod.web_layout {
+#    localization.enableCopy = 0
+#    defLangBinding = 1
+}
+
+
+//
+// Web > List
+//
+mod.web_list {
+    enableClipBoard = activated
+#    noExportRecordsLinks = 1
 }

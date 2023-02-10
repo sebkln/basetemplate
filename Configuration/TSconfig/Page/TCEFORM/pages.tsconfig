@@ -1,0 +1,14 @@
+//
+// TCEFORM: Page properties
+// ------------------------------------------
+
+//
+// Disable fields
+//
+TCEFORM.pages {
+    keywords.disabled = 1
+    author.disabled = 1
+    author_email.disabled = 1
+    layout.disabled = 1
+    newUntil.disabled = 1
+}

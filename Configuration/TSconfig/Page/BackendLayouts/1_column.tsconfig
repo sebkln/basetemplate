@@ -1,7 +1,6 @@
-####################################
-# BackendLayout: 1 column          #
-####################################
-
+//
+// BackendLayout: 1 column
+// ------------------------------------------
 mod.web_layout.BackendLayouts {
     1_column {
         title = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.1_column

@@ -1,13 +1,20 @@
-####################################
-# Basic Backend configuration      #
-####################################
+//
+// Basic Backend configuration
+// ------------------------------------------
 
-options {
-    # pageTree.showPageIdWithTitle = 1
+//
+// Page tree
+//
+options.pageTree {
+#    showPageIdWithTitle = 1
+}
 
-    file_list.enableDisplayBigControlPanel = activated
-    file_list.enableDisplayThumbnails = activated
-    file_list.enableClipBoard = activated
 
-    clearCache.system = 1
+//
+// File list (fileadmin)
+//
+options.file_list {
+    enableDisplayThumbnails = activated
+    enableClipBoard = activated
+    primaryActions = view,metadata,copy,cut,delete
 }

@@ -1,1 +1,6 @@
+//
+// User TSconfig (loaded globally)
+//
+// https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Index.html
+// ------------------------------------------
 @import 'EXT:basetemplate/Configuration/TSconfig/User/*.tsconfig'

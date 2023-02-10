@@ -1,7 +1,6 @@
-####################################
-# BackendLayout: 50/50             #
-####################################
-
+//
+// BackendLayout: 2 columns, 50%/50% width
+// ------------------------------------------
 mod.web_layout.BackendLayouts {
     2_columns_50_50 {
         title = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.title.2_columns_50_50

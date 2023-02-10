@@ -1,5 +1,5 @@
-####################################
-# Rich Text Editor (rte_ckeditor)  #
-####################################
+//
+// Rich Text Editor (rte_ckeditor)
+// ------------------------------------------
 
 RTE.default.preset = basetemplate_rte
