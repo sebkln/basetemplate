@@ -1,6 +1,8 @@
 //
 // Dependencies
 // ------------------------------------------
+@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
 #@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
 
 

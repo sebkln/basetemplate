@@ -1,3 +1,4 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:comment>
 <!--
     Build your main navigation here.
@@ -7,12 +8,12 @@
 
 <nav id="nav--header">
     <ul class="o-nav  o-nav--horizontal  c-nav-main">
-        <f:render section="MainNavigation" arguments="{data: data, mainNavigation: mainNavigation}"/>
+        <f:render section="MainNavigationFirstLevel" arguments="{data: data, mainNavigation: mainNavigation}"/>
     </ul>
 </nav>
 
 
-<f:section name="MainNavigation">
+<f:section name="MainNavigationFirstLevel">
     <f:for each="{mainNavigation}" as="item">
         <li>
             <a href="{item.link}"
@@ -33,7 +34,7 @@
 
 <f:comment>
 <!--
-    Recursively render all sub-levels of the main navigation.
+    Recursively render all sublevels of the main navigation.
 -->
 </f:comment>
 <f:section name="MainNavigationSublevels">
@@ -62,3 +63,4 @@
         </f:for>
     </ul>
 </f:section>
+</html>
