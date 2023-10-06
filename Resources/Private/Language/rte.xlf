@@ -4,6 +4,34 @@
 		  product-name="basetemplate">
 		<header/>
 		<body>
+			<!-- Elements -->
+			<trans-unit id="element.h1">
+				<source>H1 Heading</source>
+			</trans-unit>
+			<trans-unit id="element.h2">
+				<source>H2 Heading</source>
+			</trans-unit>
+			<trans-unit id="element.h3">
+				<source>H3 Heading</source>
+			</trans-unit>
+			<trans-unit id="element.h4">
+				<source>H4 Heading</source>
+			</trans-unit>
+			<trans-unit id="element.h5">
+				<source>H5 Heading</source>
+			</trans-unit>
+			<trans-unit id="element.h6">
+				<source>H6 Heading</source>
+			</trans-unit>
+			<trans-unit id="element.p">
+				<source>Paragraph</source>
+			</trans-unit>
+			<trans-unit id="element.pre">
+				<source>Preformatted</source>
+			</trans-unit>
+
+
+			<!-- Styles -->
 			<trans-unit id="styles.align.left">
 				<source>Align left</source>
 			</trans-unit>
@@ -19,6 +47,9 @@
 			<trans-unit id="styles.p.intro">
 				<source>Introduction</source>
 			</trans-unit>
+			<trans-unit id="styles.p.small">
+				<source>Small print</source>
+			</trans-unit>
 			<trans-unit id="styles.list.checkmark">
 				<source>Checkmark list</source>
 			</trans-unit>
@@ -27,9 +58,6 @@
 			</trans-unit>
 			<trans-unit id="styles.table.bordered">
 				<source>Table (bordered)</source>
-			</trans-unit>
-			<trans-unit id="styles.table.combined">
-				<source>Table (striped + bordered)</source>
 			</trans-unit>
 		</body>
 	</file>

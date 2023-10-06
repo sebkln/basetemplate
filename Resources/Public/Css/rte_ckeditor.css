@@ -2,36 +2,13 @@
    #CKEDITOR
    ========================================================================== */
 /*
- * Add your own classes for the RTE CKEditor.
+ * Add your own styles for the RTE CKEditor.
  *
- * Any declarations set here are only for display in the Editor, not in the Frontend.
+ * Any declarations set here are only for display in the editor, not in the frontend.
+ *
+ * 1. Workaround for the <span> element that is added by CKEditor in the editor UI.
  */
 
-
-/* CKEditor UI only
-   ========================================================================== */
-/*
- * 1. Prevent headings inside 'Paragraph Format' dropdown to grow larger than the panel.
- *    You can still style headings inside the RTE to match the frontend:
- *        h1 {
- *            color: #f49800;
- *            font-size: 2em;
- *        }
- */
-
-.cke_panel_listItem h1 { font-size: 18px; } /* [1] */
-.cke_panel_listItem h2 { font-size: 18px; } /* [1] */
-.cke_panel_listItem h3 { font-size: 18px; } /* [1] */
-.cke_panel_listItem h4 { font-size: 18px; } /* [1] */
-.cke_panel_listItem h5 { font-size: 18px; } /* [1] */
-.cke_panel_listItem h6 { font-size: 18px; } /* [1] */
-
-
-
-
-
-/* Adapt styling inside RTE to your needs
-   ========================================================================== */
 .intro {
     color: #888;
     font-size: 1.5em;
@@ -42,11 +19,19 @@
     list-style: none;
 }
 
-
 .list--checkmark li:before {
     color: green;
     content: '✓';
     padding-right: .5em;
+}
+
+.list--checkmark .ck-list-bogus-paragraph {
+    display: inline !important; /* [1] */
+}
+
+
+.text-small {
+    font-size: .875em;
 }
 
 

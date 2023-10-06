@@ -1,79 +1,84 @@
 # Load default processing options
 imports:
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
-    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
 
 # Add configuration for the editor
-# For complete documentation see http://docs.ckeditor.com/#!/api/CKEDITOR.config
+# For complete documentation see https://ckeditor.com/docs/ckeditor5/latest/features/index.html
 editor:
   config:
     # Size of editing area:
-    height: 600
+    height: 500
 
-    # The default styles for the editor. You can add your custom styles here.
+    # Additional stylesheet for the editor:
     contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css", "EXT:basetemplate/Resources/Public/Css/rte_ckeditor.css"]
-    stylesSet:
-      # Alignment styles:
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.align.left", element: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "td", "th"], attributes: { "class": "text-left" }}
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.align.center", element: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "td", "th"], attributes: { "class": "text-center" }}
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.align.right", element: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "td", "th"], attributes: { "class": "text-right" }}
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.align.justify", element: ["h1", "h2", "h3", "h4", "h5", "h6", "p", "td", "th"], attributes: { "class": "text-justify" }}
 
-      # Block level styles:
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.p.intro", element: "p", attributes: { "class": "intro" }}
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.list.checkmark", element: "ul", attributes: { "class": "list--checkmark" } }
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.table.striped", element: "table", attributes: { "class": "ce-table  ce-table-striped" } }
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.table.bordered", element: "table", attributes: { "class": "ce-table  ce-table-bordered" } }
-      - { name: "LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.table.combined", element: "table", attributes: { "class": "ce-table  ce-table-striped  ce-table-bordered" } }
+    toolbar:
+      items:
+        - style
+        - heading
+        # grouping separator
+        - '|'
+        - bold
+        - italic
+        - subscript
+        - superscript
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - alignment
+        - '|'
+        - findAndReplace
+        - link
+        - SoftHyphen
+        - '|'
+        - removeFormat
+        - undo
+        - redo
+        - '|'
+        - insertTable
+        - '|'
+        - specialCharacters
+        - horizontalLine
+        - sourceEditing
 
-    # Available block elements:
-    format_tags: "p;h1;h2;h3;h4;pre"
+    heading:
+      options:
+        - { model: 'paragraph', title: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:element.p' }
+        - { model: 'heading1', view: 'h1', title: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:element.h1' }
+        - { model: 'heading2', view: 'h2', title: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:element.h2' }
+        - { model: 'heading3', view: 'h3', title: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:element.h3' }
+        - { model: 'heading4', view: 'h4', title: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:element.h4' }
+        - { model: 'formatted', view: 'pre', title: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:element.pre' }
 
-    # Sort buttons:
-    toolbarGroups:
-      - { name: styles, groups: [ format, styles ] }
-      - { name: colors }
-      - { name: cleanup }
-      - { name: basicstyles }
-      - { name: align }
-      - { name: list }
-      - { name: links }
-      - { name: paragraph, groups: [ indent, blocks ] }
-      - { name: insert }
-      - { name: clipboard, groups: [ clipboard, undo ] }
-      - { name: table }
-      - { name: tabletools }
-      - { name: others }
-      - { name: editing, groups: [ find, selection, spellchecker ] }
-      - { name: tools, groups: [ specialchar, insertcharacters ] }
-      - { name: mode }
+    style:
+      definitions:
+        - { name: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.p.intro', element: 'p', classes: ['intro'] }
+        - { name: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.p.small', element: 'p', classes: ['text-small'] }
+        - { name: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.list.checkmark', element: 'ul', classes: ['list--checkmark'] }
+        - { name: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.table.striped', element: 'table', classes: ['ce-table', 'ce-table-striped'] }
+        - { name: 'LLL:EXT:basetemplate/Resources/Private/Language/rte.xlf:styles.table.bordered', element: 'table', classes: ['ce-table', 'ce-table-bordered'] }
 
-    removeButtons:
-      - Anchor
-      - Underline
-      - Strike
-      - BGColor
+    alignment:
+      options:
+        - { name: 'left', className: 'text-left' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-right' }
+        - { name: 'justify', className: 'text-justify' }
 
-    justifyClasses:
-      - text-left
-      - text-center
-      - text-right
-      - text-justify
+    table:
+      defaultHeadings: { rows: 1 }
+      contentToolbar:
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - tableProperties
+        - tableCellProperties
 
-    extraPlugins:
-      - justify
-      - specialchar
-      - showblocks
-      - wordcount
-      - find
-
-    removePlugins:
-      - image
 
 # Additional processing of tags and attributes
 processing:
   allowTags:
     - wbr
-  HTMLparser_db:
-    noAttrib: br,wbr

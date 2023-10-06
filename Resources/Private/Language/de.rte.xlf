@@ -4,6 +4,42 @@
 		  product-name="basetemplate">
 		<header/>
 		<body>
+			<!-- Elements -->
+			<trans-unit id="element.h1" approved="yes">
+				<source>H1 Heading</source>
+				<target>H1 Überschrift</target>
+			</trans-unit>
+			<trans-unit id="element.h2" approved="yes">
+				<source>H2 Heading</source>
+				<target>H2 Überschrift</target>
+			</trans-unit>
+			<trans-unit id="element.h3" approved="yes">
+				<source>H3 Heading</source>
+				<target>H3 Überschrift</target>
+			</trans-unit>
+			<trans-unit id="element.h4" approved="yes">
+				<source>H4 Heading</source>
+				<target>H4 Überschrift</target>
+			</trans-unit>
+			<trans-unit id="element.h5" approved="yes">
+				<source>H5 Heading</source>
+				<target>H5 Überschrift</target>
+			</trans-unit>
+			<trans-unit id="element.h6" approved="yes">
+				<source>H6 Heading</source>
+				<target>H6 Überschrift</target>
+			</trans-unit>
+			<trans-unit id="element.p" approved="yes">
+				<source>Paragraph</source>
+				<target>Absatz</target>
+			</trans-unit>
+			<trans-unit id="element.pre" approved="yes">
+				<source>Preformatted</source>
+				<target>Formatiert</target>
+			</trans-unit>
+
+
+			<!-- Styles -->
 			<trans-unit id="styles.align.left" approved="yes">
 				<source>Align left</source>
 				<target>linksbündig</target>
@@ -24,6 +60,10 @@
 				<source>Introduction</source>
 				<target>Einleitung</target>
 			</trans-unit>
+			<trans-unit id="styles.p.small" approved="yes">
+				<source>Small print</source>
+				<target>Kleingedrucktes</target>
+			</trans-unit>
 			<trans-unit id="styles.list.checkmark" approved="yes">
 				<source>Checkmark list</source>
 				<target>Häkchen-Liste</target>
@@ -35,10 +75,6 @@
 			<trans-unit id="styles.table.bordered" approved="yes">
 				<source>Table (bordered)</source>
 				<target>Tabelle (umrahmt)</target>
-			</trans-unit>
-			<trans-unit id="styles.table.combined" approved="yes">
-				<source>Table (striped + bordered)</source>
-				<target>Tabelle (gestreift + umrahmt)</target>
 			</trans-unit>
 		</body>
 	</file>
