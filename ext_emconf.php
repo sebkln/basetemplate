@@ -10,7 +10,7 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'sebastian@sebkln.de',
     'constraints' => [
         'depends' => [
-            'typo3' => '12.1.3-12.4.99',
+            'typo3' => '12.4.6-12.4.99',
             'recycler' => '',
             'seo' => '',
         ],
