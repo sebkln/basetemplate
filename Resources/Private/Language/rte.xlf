@@ -1,62 +1,62 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2017-07-17T19:53:16Z"
-		  product-name="basetemplate">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" date="2017-07-17T19:53:16Z"
+		  original="EXT:basetemplate/Resources/Private/Language/rte.xlf" product-name="basetemplate">
 		<header/>
 		<body>
 			<!-- Elements -->
-			<trans-unit id="element.h1">
+			<trans-unit id="element.h1" resname="element.h1">
 				<source>H1 Heading</source>
 			</trans-unit>
-			<trans-unit id="element.h2">
+			<trans-unit id="element.h2" resname="element.h2">
 				<source>H2 Heading</source>
 			</trans-unit>
-			<trans-unit id="element.h3">
+			<trans-unit id="element.h3" resname="element.h3">
 				<source>H3 Heading</source>
 			</trans-unit>
-			<trans-unit id="element.h4">
+			<trans-unit id="element.h4" resname="element.h4">
 				<source>H4 Heading</source>
 			</trans-unit>
-			<trans-unit id="element.h5">
+			<trans-unit id="element.h5" resname="element.h5">
 				<source>H5 Heading</source>
 			</trans-unit>
-			<trans-unit id="element.h6">
+			<trans-unit id="element.h6" resname="element.h6">
 				<source>H6 Heading</source>
 			</trans-unit>
-			<trans-unit id="element.p">
+			<trans-unit id="element.p" resname="element.p">
 				<source>Paragraph</source>
 			</trans-unit>
-			<trans-unit id="element.pre">
+			<trans-unit id="element.pre" resname="element.pre">
 				<source>Preformatted</source>
 			</trans-unit>
 
 
 			<!-- Styles -->
-			<trans-unit id="styles.align.left">
+			<trans-unit id="styles.align.left" resname="styles.align.left">
 				<source>Align left</source>
 			</trans-unit>
-			<trans-unit id="styles.align.center">
+			<trans-unit id="styles.align.center" resname="styles.align.center">
 				<source>Align center</source>
 			</trans-unit>
-			<trans-unit id="styles.align.right">
+			<trans-unit id="styles.align.right" resname="styles.align.right">
 				<source>Align right</source>
 			</trans-unit>
-			<trans-unit id="styles.align.justify">
+			<trans-unit id="styles.align.justify" resname="styles.align.justify">
 				<source>Align justify</source>
 			</trans-unit>
-			<trans-unit id="styles.p.intro">
+			<trans-unit id="styles.p.intro" resname="styles.p.intro">
 				<source>Introduction</source>
 			</trans-unit>
-			<trans-unit id="styles.p.small">
+			<trans-unit id="styles.p.small" resname="styles.p.small">
 				<source>Small print</source>
 			</trans-unit>
-			<trans-unit id="styles.list.checkmark">
+			<trans-unit id="styles.list.checkmark" resname="styles.list.checkmark">
 				<source>Checkmark list</source>
 			</trans-unit>
-			<trans-unit id="styles.table.striped">
+			<trans-unit id="styles.table.striped" resname="styles.table.striped">
 				<source>Table (striped)</source>
 			</trans-unit>
-			<trans-unit id="styles.table.bordered">
+			<trans-unit id="styles.table.bordered" resname="styles.table.bordered">
 				<source>Table (bordered)</source>
 			</trans-unit>
 		</body>

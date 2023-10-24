@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2016-06-18T12:03:24Z"
-		  product-name="basetemplate">
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file source-language="en" datatype="plaintext" date="2016-06-18T12:03:24Z"
+		  original="EXT:basetemplate/Resources/Private/Language/locallang.xlf" product-name="basetemplate">
 		<header/>
 		<body>
-			<trans-unit id="dummy">
-				<source>Use this file for localized data in the Frontend, e.g. in Fluid Templates</source>
+			<trans-unit id="header.logo.link.title" resname="header.logo.link.title">
+				<source>Visit the homepage</source>
 			</trans-unit>
 		</body>
 	</file>
