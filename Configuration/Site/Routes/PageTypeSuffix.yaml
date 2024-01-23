@@ -1,0 +1,21 @@
+# PageType enhancer (decorator)
+#
+# The following typeNum are preconfigured:
+# - 0:          used for normal pages
+# - 1533906435: used for sitemaps with EXT:seo
+# - 1480321830: used for backend preview with EXT:yoast_seo
+#
+# More information:
+# https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Routing/AdvancedRoutingConfiguration.html#pagetype-decorator
+# https://www.sebkln.de/en/tutorials/routing-in-typo3-trailing-slash-or-html-suffix-in-url/
+#
+# IMPORTANT: If you use the PageType Decorator, the mapping becomes mandatory for all typeNum!
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    default: '/'
+    index: ''
+    map:
+      '/': 0
+      sitemap.xml: 1533906435
+      yoast-snippetpreview.json: 1480321830

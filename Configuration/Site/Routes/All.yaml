@@ -1,0 +1,5 @@
+# You can import these preconfigured route enhancers
+# in your config/sites/<my_site>/config.yaml (Site Configuration).
+imports:
+  - { resource: "EXT:basetemplate/Configuration/Site/Routes/PageTypeSuffix.yaml" }
+  - { resource: "EXT:basetemplate/Configuration/Site/Routes/News.yaml" }
