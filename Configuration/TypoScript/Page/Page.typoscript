@@ -5,7 +5,12 @@ page = PAGE
 page {
     typeNum = 0
 
-    meta < lib.meta
+    meta {
+        viewport = {$page.meta.viewport}
+        description.field = description
+        og:site_name = TEXT
+        og:site_name.data = siteLanguage:websiteTitle // site:websiteTitle
+    }
 
     includeCSS {
         style = EXT:basetemplate/Resources/Public/Css/style.min.css
@@ -68,7 +73,7 @@ page {
             20 = menu
             20 {
                 special = directory
-                special.value = {$pageId.navigation.mainRoot}
+                special.value = {$page.identifier.navigation.mainRoot}
                 levels = 3
                 as = mainNavigation
             }
@@ -78,7 +83,7 @@ page {
             30 = menu
             30 {
                 special = directory
-                special.value = {$pageId.navigation.footerRoot}
+                special.value = {$page.identifier.navigation.footerRoot}
                 as = metaNavigation
             }
             */

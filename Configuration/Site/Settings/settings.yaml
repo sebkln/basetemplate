@@ -2,16 +2,19 @@
 # in your config/sites/<my_site>/settings.yaml
 #
 # Usage in TypoScript and Page TSconfig:
-# -> e.g. {$pageId.navigation.mainRoot}
-# Usage in Fluid (needs dataProcessing):
-# -> e.g. {site.configuration.settings.pageId.navigation.mainRoot}
+# -> e.g. {$page.identifier.navigation.mainRoot}
+# Usage in Fluid (needs dataProcessing, see "Page.typoscript"):
+# -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
 #
 # Documentation:
 # - https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/SiteHandling/SiteSettings.html
 # - https://docs.typo3.org/m/typo3/reference-typoscript/12.4/en-us/ContentObjects/Fluidtemplate/DataProcessing/SiteProcessor.html
-pageId:
-  navigation:
-    mainRoot: 1
-    footerRoot: 123
-  storage:
-    newsRecords: 42
+page:
+  identifier:
+    navigation:
+      mainRoot: 1
+      footerRoot: 123
+    storage:
+      newsRecords: 42
+  meta:
+    viewport: 'width=device-width, initial-scale=1.0'
