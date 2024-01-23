@@ -4,9 +4,6 @@
 		  original="EXT:basetemplate/Resources/Private/Language/locallang_be.xlf" product-name="basetemplate">
 		<header/>
 		<body>
-			<trans-unit id="constants.label.websiteName" resname="constants.label.websiteName">
-				<source>The website's name (in title tag and Open Graph meta tag)</source>
-			</trans-unit>
 			<trans-unit id="constants.label.headerComment" resname="constants.label.headerComment">
 				<source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
 			</trans-unit>

@@ -2,17 +2,23 @@
 // Page title configuration
 // ------------------------------------------
 config {
-    // Append website name to title.
-    // If a SEO title for a page is used, we don't want to append the website name automatically:
-    pageTitle.noTrimWrap = ## | {$plugin.tx_basetemplate.websiteName}#
-    pageTitle.noTrimWrap.splitChar = #
-    pageTitle.noTrimWrap.if.isFalse.data = page:seo_title
+    // Append website title from Site Configuration to title tag.
+    // If an optimized SEO title is set for a page, the website title will be omitted.
+    showWebsiteTitle = 0
+    pageTitle.append = TEXT
+    pageTitle.append {
+        data = siteLanguage:websiteTitle // site:websiteTitle
+        stdWrap.noTrimWrap = # | ##
+        stdWrap.noTrimWrap.splitChar = #
+        stdWrap.if.isTrue.data = siteLanguage:websiteTitle // site:websiteTitle
+        if.isFalse.data = page:seo_title
+    }
 }
 
 
-// Don't append website name to news records with an alternative title:
+// Don't append website title to news records with an optimized alternative title:
 [traverse(request.getQueryParams(), 'tx_news_pi1/news') > 0]
-    config.pageTitle.noTrimWrap.if.isFalse {
+    config.pageTitle.append.if.isFalse {
         data >
         dataWrap = DB:tx_news_domain_model_news:{GP:tx_news_pi1|news}:alternative_title
         wrap3 = {|}

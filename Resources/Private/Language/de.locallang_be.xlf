@@ -4,10 +4,6 @@
 		  original="EXT:basetemplate/Resources/Private/Language/locallang_be.xlf" product-name="basetemplate">
 		<header/>
 		<body>
-			<trans-unit id="constants.label.websiteName" resname="constants.label.websiteName" approved="yes">
-				<source>The website's name (in title tag and Open Graph meta tag)</source>
-				<target>Der Name der Website (für das title-Tag und Open Graph Meta-Element)</target>
-			</trans-unit>
 			<trans-unit id="constants.label.headerComment" resname="constants.label.headerComment" approved="yes">
 				<source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
 				<target>Ergänze einen Copyright-Hinweis im Quelltext (als Teil des TYPO3 Kommentars)</target>
