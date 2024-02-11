@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Templating Starter Kit for TYPO3 CMS',
-    'description' => 'Use it as a base for your website configuration. Add all your Stylesheets, JavaScripts and Templates.',
+    'title' => 'Sitepackage Starter Kit for TYPO3 CMS',
+    'description' => 'Contains website templates, assets, configuration and custom code for your TYPO3 project.',
     'version' => '1.0.0',
     'state' => 'stable',
     'category' => 'templates',
