@@ -17,7 +17,7 @@ config {
 
 
 // Don't append website title to news records with an optimized alternative title:
-[traverse(request.getQueryParams(), 'tx_news_pi1/news') > 0]
+[request && traverse(request.getQueryParams(), 'tx_news_pi1/news') > 0]
     config.pageTitle.append.if.isFalse {
         data >
         dataWrap = DB:tx_news_domain_model_news:{GP:tx_news_pi1|news}:alternative_title
