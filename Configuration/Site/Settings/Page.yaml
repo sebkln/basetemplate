@@ -1,14 +1,9 @@
-# You can import these Site settings
-# in your config/sites/<my_site>/settings.yaml
+# Page settings/variables
 #
 # Usage in TypoScript and Page TSconfig:
 # -> e.g. {$page.identifier.navigation.mainRoot}
 # Usage in Fluid (needs dataProcessing, see "Page.typoscript"):
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
-#
-# Documentation:
-# - https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/SiteHandling/SiteSettings.html
-# - https://docs.typo3.org/m/typo3/reference-typoscript/12.4/en-us/ContentObjects/Fluidtemplate/DataProcessing/SiteProcessor.html
 page:
   identifier:
     navigation:

@@ -49,6 +49,7 @@ Its concepts follow best practices of the TYPO3 community, but also take persona
 - Basic **TSconfig**, e.g. for backend layouts
 - Basic RTE **CKEditor 5** configuration
 - **Route Enhancers** for pages and news
+- PSR-15 middleware to provide favicons and web app manifest
 - Configuration files are divided into smaller partials for more clarity and maintainability
 
 
@@ -119,17 +120,18 @@ This extension requires to include it manually, which allows for different TScon
 
 #### 3. Import the Site settings
 
-Import the preconfigured **Site settings** in your `config/sites/<my_site>/settings.yaml` (or copy its contents):
+Import the preconfigured **Site settings** in your `config/sites/<my_site>/settings.yaml` (or copy the related contents):
 
 ```
 imports:
-  - { resource: "EXT:basetemplate/Configuration/Site/Settings/settings.yaml" }
+  - { resource: "EXT:basetemplate/Configuration/Site/Settings/All.yaml" }
 ```
 
-This file holds some configuration that is read in TypoScript, e.g.:
+This file includes some configuration that is read in TypoScript, e.g.:
 
-- page UIDs for website navigations
+- page IDs for website navigations
 - page IDs for storage folders (e.g. news)
+- settings for the favicon provider
 
 Read more about Site settings and their advantages:
 https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSettings.html
