@@ -9,7 +9,7 @@ TYPO3 12.4.6 - 13.4.99
 
 ## What is a TYPO3 sitepackage?
 
-All relevant configuration for your TYPO3 installation should be stored in a custom extension:
+All relevant configurations for your TYPO3 installation should be stored in a custom extension:
 the so-called *sitepackage*.
 
 **A sitepackage typically contains:**
@@ -35,10 +35,10 @@ This TYPO3 extension can be the starting point for your own sitepackage.
 
 It contains enough configuration and templates to get you started.
 
-It will not impose any Frontend Framework on you. You're free to use your favourite Framework and custom templates.
+It will not impose any Frontend Framework on you. You're free to use your favorite Framework and custom templates.
 
-This sitepackage starter kit is maintained and continuosly improved since TYPO3 version 6.2.
-Its concepts follow best practices of the TYPO3 community, but also take personal experiences into account.
+This sitepackage starter kit has been maintained and continuously improved since TYPO3 version 6.2.
+Its concepts follow the best practices of the TYPO3 community but also take personal experiences into account.
 
 
 ## Features
@@ -106,7 +106,7 @@ within the sitepackage.
 *Note: remember to also import an extension's TypoScript constants in `constants.typoscript`, if given*
 
 This allows you to specify the loading order in one central place, to version it with Git
-and to deploy it to multiple web servers (e.g. Production, Staging and Development).
+and to deploy it to multiple web servers (e.g. Production, Staging, and Development).
 
 #### 2. Include the Page TSconfig
 
@@ -138,7 +138,7 @@ https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHand
 
 #### 4. Optional: Import preconfigured Route Enhancers
 
-This extension contains commonly used configuration for page types and the news extension.
+This extension contains commonly used configurations for page types and the news extension.
 
 You can import all or selected Route Enhancers into your `config/sites/<my_site>/config.yaml`
 (or copy their configuration):
@@ -169,7 +169,7 @@ when changing layouts.
 The TypoScript `lib.dynamicContent` will take care of rendering the desired column's content
 in your Fluid templates.
 
-All you have to do is inserting the following `f:cObject` viewhelper into your Fluid template
+All you have to do is insert the following `f:cObject` viewhelper into your Fluid template
 and adapt the `colPos` value:
 
 ````
@@ -184,9 +184,9 @@ More details: [TYPO3 Sitepackage tutorial, Chapter 'Content Mapping'](https://do
 At some point, you'll need to customize templates from extensions like [news](https://extensions.typo3.org/extension/news/).
 You should save all these modifications in your sitepackage, too.
 
-I recommend to store them inside the subdirectory `Resources/Private/Extensions/` to separate them from your website templates.
+I recommend storing them inside the subdirectory `Resources/Private/Extensions/` to separate them from your website templates.
 
-In case of EXT:news, this will result in the following directory structure:
+In the case of EXT:news, this will result in the following directory structure:
 
 ````
 Resources/Private/Extensions/news/Templates/
@@ -194,7 +194,7 @@ Resources/Private/Extensions/news/Partials/
 Resources/Private/Extensions/news/Layouts/
 ````
 
-You'll have to set these paths in TypoScript. All TypoScript configurations for third party extensions
+You'll have to set these paths in TypoScript. All TypoScript configurations for third-party extensions
 should be stored in `Configuration/TypoScript/Extensions/[extensionKey].typoscript`.
 
 
@@ -206,4 +206,4 @@ https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ExtensionArchitectur
 <a name="underscores">[2]</a> Also **be very careful when using underscores** in your extension name! It is highly encouraged to avoid them.
 If you e.g. choose the name `acme_site_package`, you'll have to use **two notations!**
 In links like *EXT:acme_site_package/link/to/file.css*, use the actual folder name.
-When using constants however, you'll have to remove all underscores and prefix `tx_`: *$plugin.tx_acmesitepackage*!
+When using constants, however, you'll have to remove all underscores and prefix `tx_`: *$plugin.tx_acmesitepackage*!
