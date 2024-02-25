@@ -22,9 +22,8 @@
 		}
 	],
 	"require": {
-		"typo3/cms-core": ">=12.4.6 <12.4.99",
-		"typo3/cms-recycler": ">=12.4.6 <12.4.99",
-		"typo3/cms-seo": ">=12.4.6 <12.4.99"
+		"typo3/cms-core": ">=12.4.6 <13.4.99",
+		"typo3/cms-seo": ">=12.4.6 <13.4.99"
 	},
 	"autoload": {
 		"psr-4": {

@@ -4,7 +4,7 @@
 
 ## Compatibility
 
-TYPO3 12.4.6 - 12.4.99
+TYPO3 12.4.6 - 13.4.99
 
 
 ## What is a TYPO3 sitepackage?
