@@ -4,8 +4,11 @@
 
 ## Compatibility
 
-TYPO3 12.4.6 - 13.4.99
+Since some configurations have changed between TYPO3 versions, you can choose the compatible version of this extension
+here:
 
+- [basetemplate for TYPO3 v13 (main branch)](https://github.com/sebkln/basetemplate/)
+- [basetemplate for TYPO3 v12](https://github.com/sebkln/basetemplate/tree/12.4)
 
 ## What is a TYPO3 sitepackage?
 
