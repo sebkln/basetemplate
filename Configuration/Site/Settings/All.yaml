@@ -1,9 +1,0 @@
-# You can import these Site settings
-# in your config/sites/<my_site>/settings.yaml
-#
-# Documentation:
-# - https://docs.typo3.org/m/typo3/reference-coreapi/12.4/en-us/ApiOverview/SiteHandling/SiteSettings.html
-# - https://docs.typo3.org/m/typo3/reference-typoscript/12.4/en-us/ContentObjects/Fluidtemplate/DataProcessing/SiteProcessor.html
-imports:
-  - { resource: "EXT:basetemplate/Configuration/Site/Settings/Page.yaml" }
-  - { resource: "EXT:basetemplate/Configuration/Site/Settings/Favicons.yaml" }

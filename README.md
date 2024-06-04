@@ -48,7 +48,7 @@ Its concepts follow the best practices of the TYPO3 community but also take pers
 
 - Meaningful directory structure to manage your files
 - Basic Fluid templates for the website and the main navigation (easily adjustable)
-- Essential **TypoScript** Setup, which you can integrate as a Static Template
+- Essential **TypoScript** Setup, which you can integrate as a [Site Set](https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSets.html)
 - Basic **TSconfig**, e.g. for backend layouts
 - Basic RTE **CKEditor 5** configuration
 - **Route Enhancers** for pages and news
@@ -62,12 +62,13 @@ Its concepts follow the best practices of the TYPO3 community but also take pers
 
 There is no need to update this extension with a newer version from this repository at a later time.
 
-You may want to **rename** the extension:
+You might want to **rename** the extension:
 1. Rename the folder from `basetemplate` to your desired name, e.g. `clientname`.
    **Keep the naming conventions for extensions in mind!**<sup>[1](#namingconvention)</sup>
 2. Search and replace all occurences of `basetemplate` with the new chosen name.
    Replacing is fast and easy if you use a professional text editor and don't use underscores.<sup>[2](#underscores)</sup>
 
+Be sure to check and adjust the configurations to your needs.
 
 ### Installation
 
@@ -77,69 +78,55 @@ You may want to **rename** the extension:
 
 ### Initial setup
 
-#### 1. Include the TypoScript template
+#### 1. Include the Site Set
 
-Include the **Static Template** of this extension in your TypoScript root template (`sys_template`).
+Include the **Site Set** "Basetemplate (Sitepackage)" of this extension in your Site Configuration.
 
-The TypoScript of all other extensions (Fluid Styled Content, XML sitemap, News, …) should be loaded from
-within the sitepackage.
+This will provide various configurations for the related page tree:
 
-**Configuration/TypoScript/setup.typoscript:**
+- TypoScript
+- Page TSconfig
+- Site Settings
 
-```
-//
-// Dependencies
-// ------------------------------------------
-@import 'EXT:fluid_styled_content/Configuration/TypoScript/setup.typoscript'
-@import 'EXT:seo/Configuration/TypoScript/XmlSitemap/setup.typoscript'
-#@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+Included by default are the following **Site Set dependencies**:
 
+- Basetemplate (Favicon configuration)
+- Fluid Styled Content
+- SEO Sitemap
 
-//
-// Project setup
-// ------------------------------------------
-@import 'EXT:basetemplate/Configuration/TypoScript/Config/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/Lib/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/Extensions/*.typoscript'
-#@import 'EXT:basetemplate/Configuration/TypoScript/ContentElements/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/Page/Page.typoscript'
-```
+_Note: **User TSconfig** is loaded globally when this sitepackage is installed._
 
-*Note: remember to also import an extension's TypoScript constants in `constants.typoscript`, if given*
+Learn more about the new Site Sets in TYPO3:
+https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSets.html
 
-This allows you to specify the loading order in one central place, to version it with Git
-and to deploy it to multiple web servers (e.g. Production, Staging, and Development).
+#### 2. Adjust the Site settings
 
-#### 2. Include the Page TSconfig
+##### Site Setting definitions
 
-Include the desired **Page TSconfig** resources in the page properties of your root page.
+1. `Configuration/Sets/Basetemplate/settings.definitions.yaml`\
+   Settings for the website, e.g. page identifiers
+2. `Configuration/Sets/Favicons/settings.definitions.yaml`\
+   Settings for the favicon provider
 
-It provides the preconfigured Backend Layouts and various backend configurations.
-Be sure to check and adjust these to your needs.
+**Default values** are configured in these definitions.
 
-Note: TYPO3 v12 would allow to [include Page TSconfig automatically](https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/12.0/Feature-96614-AutomaticInclusionOfPageTsConfigOfExtensions.html).
-This extension requires to include it manually, which allows for different TSconfig settings in a multi-domain installation.
+##### Applied Site Settings (subset)
 
-#### 3. Import the Site settings
+A subset allows to override default values from dependencies, as well as your custom configuration.
 
-Import the preconfigured **Site settings** in your `config/sites/<my_site>/settings.yaml` (or copy the related contents):
+Bundle all actual Site Setting values in the subset file:\
+`Configuration/Sets/Basetemplate/settings.yaml`
 
-```
-imports:
-  - { resource: "EXT:basetemplate/Configuration/Site/Settings/All.yaml" }
-```
+By default, the following settings are shipped:
 
-This file includes some configuration that is read in TypoScript, e.g.:
+- Favicons
+- Fluid Styled Content (selected settings)
+- Custom page identifiers
 
-- page IDs for website navigations
-- page IDs for storage folders (e.g. news)
-- settings for the favicon provider
-
-Read more about Site settings and their advantages:
+Read more about Site Settings in TYPO3:
 https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSettings.html
 
-#### 4. Optional: Import preconfigured Route Enhancers
+#### 3. Optional: Import preconfigured Route Enhancers
 
 This extension contains commonly used configurations for page types and the news extension.
 
@@ -154,6 +141,52 @@ imports:
 
 Read more about Routing in TYPO3:
 https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Routing/Index.html
+
+#### 4. Load configuration of dependencies (extensions)
+
+The TypoScript of all third-party extensions (Fluid Styled Content, XML sitemap, News, …) should be loaded from
+within the sitepackage. There are two options:
+
+1. Extensions that already support Site Sets should be added as dependencies in the Site Configuration.
+
+    `Configuration/Sets/Basetemplate/config.yaml`:
+
+    ```
+    name: sebkln/basetemplate
+    label: Basetemplate (Sitepackage)
+    dependencies:
+      - sebkln/basetemplate-favicons
+      - typo3/fluid-styled-content
+      - typo3/seo-sitemap
+    ```
+
+2. For other extensions, include their TypoScript directly before your project's TypoScript.
+
+    `Configuration/Sets/Basetemplate/setup.typoscript`:
+
+    ```
+    //
+    // Dependencies
+    // ------------------------------------------
+    #@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+
+
+    //
+    // Project setup
+    // ------------------------------------------
+    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Config/*.typoscript'
+    @import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
+    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Lib/*.typoscript'
+    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Extensions/*.typoscript'
+    #@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/ContentElements/*.typoscript'
+    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Page/Page.typoscript'
+    ```
+
+    *Note: remember to also import an extension's TypoScript constants in `constants.typoscript`, if given*
+
+This allows you to specify the loading order in one central place, to version it with Git
+and to deploy it to multiple web servers (e.g. Production, Staging, and Development).
+
 
 ### Customizing
 
@@ -198,7 +231,7 @@ Resources/Private/Extensions/news/Layouts/
 ````
 
 You'll have to set these paths in TypoScript. All TypoScript configurations for third-party extensions
-should be stored in `Configuration/TypoScript/Extensions/[extensionKey].typoscript`.
+should be stored in `Configuration/Sets/Basetemplate/TypoScript/Extensions/[extension_key].typoscript`.
 
 
 ### Footnotes

@@ -1,0 +1,44 @@
+### Settings for favicon and web app manifest provider
+#
+# All settings are optional.
+# If no favicon path is set, no favicons will be linked in meta tags or the web app manifest.
+# A meta tag is rendered for each favicon file you configured.
+# A given theme color will be rendered both as meta tag and in the web app manifest.
+settings:
+  favicons.full_name:
+    label: 'Full name'
+    type: string
+    default: ''
+  favicons.short_name:
+    label: 'Short name'
+    type: string
+    default: ''
+  favicons.theme_color:
+    label: 'Theme color'
+    description: 'Theme color will be rendered both as meta tag and in the web app manifest.'
+    type: color
+    default: ''
+  favicons.favicon_path:
+    label: 'Path to favicon images'
+    type: string
+    default: ''
+  favicons.favicon_svg:
+    label: 'File name of favicon (SVG)'
+    type: string
+    default: ''
+  favicons.favicon_png:
+    label: 'File name of favicon (PNG)'
+    type: string
+    default: ''
+  favicons.apple_touch_icon:
+    label: 'File name of Apple Touch Icon'
+    type: string
+    default: ''
+  favicons.android_192:
+    label: 'Icon for Android devices (192x192)'
+    type: string
+    default: ''
+  favicons.android_512:
+    label: 'Icon for Android devices (512x512)'
+    type: string
+    default: ''

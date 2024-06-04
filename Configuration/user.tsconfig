@@ -1,6 +1,19 @@
 //
-// Basic Backend configuration
+// User TSconfig (loaded globally)
+//
+// https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/UserTsconfig/Index.html
 // ------------------------------------------
+
+//
+// Backend user settings
+//
+
+setup.default {
+#    lang = de
+#    startModule = web_list
+    titleLen = 60
+}
+
 
 //
 // Page tree

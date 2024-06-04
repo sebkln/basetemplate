@@ -1,0 +1,29 @@
+### Site-specific settings
+#
+# Usage in TypoScript and Page TSconfig:
+# -> e.g. {$page.identifier.navigation.mainRoot}
+# Usage in Fluid (needs dataProcessing, see "Page.typoscript"):
+# -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
+settings:
+  config.headerComment:
+    label: LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:settings.config.headerComment
+    type: string
+    default: ''
+
+  ### Page settings/variables
+  page.identifier.navigation.mainRoot:
+    label: 'Root page UID of main navigation'
+    type: int
+    default: 1
+  page.identifier.navigation.footerRoot:
+    label: 'Root page UID of footer navigation'
+    type: int
+    default: 123
+  page.identifier.storage.newsRecords:
+    label: 'Storage page UID for news records'
+    type: int
+    default: 42
+  page.meta.viewport:
+    label: 'Viewport meta tag'
+    type: string
+    default: 'width=device-width, initial-scale=1.0'

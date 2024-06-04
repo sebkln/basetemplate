@@ -1,0 +1,11 @@
+//
+// Page TSconfig
+//
+// https://docs.typo3.org/m/typo3/reference-tsconfig/main/en-us/PageTsconfig/Index.html
+// ------------------------------------------
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TSconfig/BackendLayouts/*.tsconfig'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TSconfig/TCEFORM/*.tsconfig'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TSconfig/mod.tsconfig'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TSconfig/rte_ckeditor.tsconfig'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TSconfig/TCAdefaults.tsconfig'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TSconfig/TCEMAIN.tsconfig'

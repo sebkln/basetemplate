@@ -2,8 +2,8 @@
 // General configuration
 // ------------------------------------------
 config {
-    headerComment = {$plugin.tx_basetemplate.headerComment}
-    headerComment.if.isTrue = {$plugin.tx_basetemplate.headerComment}
+    headerComment = {$config.headerComment}
+    headerComment.if.isTrue = {$config.headerComment}
 
     forceAbsoluteUrls = 1
     linkVars = L(0-1)

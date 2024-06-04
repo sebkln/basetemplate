@@ -4,7 +4,7 @@
 		  original="EXT:basetemplate/Resources/Private/Language/locallang_be.xlf" product-name="basetemplate">
 		<header/>
 		<body>
-			<trans-unit id="constants.label.headerComment" resname="constants.label.headerComment" approved="yes">
+			<trans-unit id="settings.config.headerComment" resname="settings.config.headerComment" approved="yes">
 				<source>Add a copyright to the HTML source (as part of the TYPO3 comment)</source>
 				<target>Ergänze einen Copyright-Hinweis im Quelltext (als Teil des TYPO3 Kommentars)</target>
 			</trans-unit>

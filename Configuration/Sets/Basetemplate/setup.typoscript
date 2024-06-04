@@ -1,0 +1,15 @@
+//
+// Dependencies
+// ------------------------------------------
+#@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+
+
+//
+// Project setup
+// ------------------------------------------
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Config/*.typoscript'
+@import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Lib/*.typoscript'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Extensions/*.typoscript'
+#@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/ContentElements/*.typoscript'
+@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Page/Page.typoscript'
