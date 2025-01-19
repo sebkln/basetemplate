@@ -17,7 +17,7 @@ settings:
     label: 'Theme color'
     description: 'Theme color will be rendered both as meta tag and in the web app manifest.'
     type: color
-    default: ''
+    default: '#000000'
   favicons.favicon_path:
     label: 'Path to favicon images'
     type: string
