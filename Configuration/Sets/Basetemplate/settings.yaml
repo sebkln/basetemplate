@@ -16,13 +16,15 @@ favicons:
 styles:
   content:
     defaultHeaderType: 2
-    textmedia.maxW:
-    textmedia.maxWInText:
-    textmedia.linkWrap.width: 1200m
-    textmedia.linkWrap.height: 900m
-    textmedia.linkWrap.lightboxEnabled: 1
-    textmedia.linkWrap.lightboxCssClass: 'lightbox'
-    textmedia.linkWrap.lightboxRelAttribute: 'lightbox[{field:uid}]'
+    textmedia:
+      maxW: 900
+      maxWInText: 500
+      linkWrap:
+        width: 1200m
+        height: 900m
+        lightboxEnabled: 1
+        lightboxCssClass: 'lightbox'
+        lightboxRelAttribute: 'lightbox'
   templates:
     templateRootPath: 'EXT:basetemplate/Resources/Private/Templates/ContentElements/'
     partialRootPath: 'EXT:basetemplate/Resources/Private/Partials/ContentElements/'
