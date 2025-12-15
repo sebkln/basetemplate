@@ -4,26 +4,47 @@
 # -> e.g. {$page.identifier.navigation.mainRoot}
 # Usage in Fluid (needs dataProcessing, see "Page.typoscript"):
 # -> e.g. {site.configuration.settings.page.identifier.navigation.mainRoot}
+categories:
+  Basetemplate:
+    label: 'Basetemplate'
+  Basetemplate.configuration:
+    label: 'TypoScript settings'
+    parent: Basetemplate
+  Basetemplate.navigation:
+    label: 'Navigation'
+    parent: Basetemplate
+  Basetemplate.storage:
+    label: 'Storage'
+    parent: Basetemplate
+  Basetemplate.meta:
+    label: 'HTML meta tags'
+    parent: Basetemplate
+
 settings:
   config.headerComment:
+    category: Basetemplate.configuration
     label: LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:settings.config.headerComment
     type: string
     default: ''
 
   ### Page settings/variables
   page.identifier.navigation.mainRoot:
-    label: 'Root page UID of main navigation'
+    category: Basetemplate.navigation
+    label: 'Root page of main navigation'
     type: int
     default: 1
   page.identifier.navigation.footerRoot:
-    label: 'Root page UID of footer navigation'
+    category: Basetemplate.navigation
+    label: 'Root page of footer navigation'
     type: int
     default: 123
   page.identifier.storage.newsRecords:
-    label: 'Storage page UID for news records'
+    category: Basetemplate.storage
+    label: 'Storage for news records'
     type: int
     default: 42
   page.meta.viewport:
+    category: Basetemplate.meta
     label: 'Viewport meta tag'
     type: string
     default: 'width=device-width, initial-scale=1.0'
