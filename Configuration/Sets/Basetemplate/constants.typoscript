@@ -7,4 +7,4 @@
 //
 // Project constants
 // ------------------------------------------
-@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Constants/*.typoscript'
+@import './TypoScript/Constants/*.typoscript'
