@@ -1,43 +1,33 @@
 ### Subsets
 
-### Favicon and web app manifest provider
-favicons:
-  full_name: 'My fancy website'
-  short_name: 'My website'
-  theme_color: '#ff8800'
-  favicon_path: 'EXT:basetemplate/Resources/Public/Images/Favicons/'
-  favicon_svg: 'favicon.svg'
-  favicon_png: 'favicon-32x32.png'
-  apple_touch_icon: 'apple-touch-icon.png'
-  android_192: 'android-chrome-192x192.png'
-  android_512: 'android-chrome-512x512.png'
+### Basetemplate: Favicon and web app manifest provider
+favicons.full_name: 'My fancy website'
+favicons.short_name: 'My website'
+favicons.theme_color: '#ff8800'
+favicons.favicon_path: 'EXT:basetemplate/Resources/Public/Images/Favicons/'
+favicons.favicon_svg: favicon.svg
+favicons.favicon_png: favicon-32x32.png
+favicons.apple_touch_icon: apple-touch-icon.png
+favicons.android_192: android-chrome-192x192.png
+favicons.android_512: android-chrome-512x512.png
+
+### Basetemplate: TypoScript configuration
+config.headerComment: 'Made with ♥ and TYPO3'
+
+### Basetemplate: Page settings/variables
+page.identifier.navigation.mainRoot: 1
+page.identifier.navigation.footerRoot: 123
+page.identifier.storage.newsRecords: 42
 
 ### EXT:fluid_styled_content
-styles:
-  content:
-    defaultHeaderType: 2
-    textmedia:
-      maxW: 900
-      maxWInText: 500
-      linkWrap:
-        width: 1200m
-        height: 900m
-        lightboxEnabled: 1
-        lightboxCssClass: 'lightbox'
-        lightboxRelAttribute: 'lightbox'
-  templates:
-    templateRootPath: 'EXT:basetemplate/Resources/Private/Templates/ContentElements/'
-    partialRootPath: 'EXT:basetemplate/Resources/Private/Partials/ContentElements/'
-    layoutRootPath: 'EXT:basetemplate/Resources/Private/Layouts/ContentElements/'
-
-config:
-  headerComment: 'Made with ♥ and TYPO3'
-
-### Page settings/variables
-page:
-  identifier:
-    navigation:
-      mainRoot: 1
-      footerRoot: 123
-    storage:
-      newsRecords: 42
+styles.content.defaultHeaderType: 2
+styles.content.textmedia.maxW: 900
+styles.content.textmedia.maxWInText: 500
+styles.content.textmedia.linkWrap.width: 1200m
+styles.content.textmedia.linkWrap.height: 900m
+styles.content.textmedia.linkWrap.lightboxEnabled: true
+styles.content.textmedia.linkWrap.lightboxCssClass: lightbox
+styles.content.textmedia.linkWrap.lightboxRelAttribute: lightbox
+styles.templates.templateRootPath: 'EXT:basetemplate/Resources/Private/Templates/ContentElements/'
+styles.templates.partialRootPath: 'EXT:basetemplate/Resources/Private/Partials/ContentElements/'
+styles.templates.layoutRootPath: 'EXT:basetemplate/Resources/Private/Layouts/ContentElements/'
