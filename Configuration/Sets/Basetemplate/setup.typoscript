@@ -12,4 +12,4 @@
 @import './TypoScript/Lib/*.typoscript'
 @import './TypoScript/Extensions/*.typoscript'
 #@import './TypoScript/ContentElements/*.typoscript'
-@import './TypoScript/Page/Page.typoscript'
+@import './TypoScript/Page/*.typoscript'
