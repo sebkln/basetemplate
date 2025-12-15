@@ -31,18 +31,18 @@ settings:
   page.identifier.navigation.mainRoot:
     category: Basetemplate.navigation
     label: 'Root page of main navigation'
-    type: int
-    default: 1
+    type: page
+    default: 0
   page.identifier.navigation.footerRoot:
     category: Basetemplate.navigation
     label: 'Root page of footer navigation'
-    type: int
-    default: 123
+    type: page
+    default: 0
   page.identifier.storage.newsRecords:
     category: Basetemplate.storage
     label: 'Storage for news records'
-    type: int
-    default: 42
+    type: page
+    default: 0
   page.meta.viewport:
     category: Basetemplate.meta
     label: 'Viewport meta tag'

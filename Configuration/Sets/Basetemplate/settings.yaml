@@ -16,8 +16,6 @@ config.headerComment: 'Made with ♥ and TYPO3'
 
 ### Basetemplate: Page settings/variables
 page.identifier.navigation.mainRoot: 1
-page.identifier.navigation.footerRoot: 123
-page.identifier.storage.newsRecords: 42
 
 ### EXT:fluid_styled_content
 styles.content.defaultHeaderType: 2
