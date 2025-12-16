@@ -1,0 +1,19 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="DefaultLayout"/>
+
+<f:comment>
+    <!--
+        This template will be used as a fallback if no Backend Layout could be found.
+    -->
+</f:comment>
+
+<f:section name="PageContent">
+    <!--TYPO3SEARCH_begin-->
+    <div class="o-layout  o-layout--huge">
+        <div class="o-layout__item  u-1/1">
+            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+        </div>
+    </div>
+    <!--TYPO3SEARCH_end-->
+</f:section>
+</html>
