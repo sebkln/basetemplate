@@ -174,12 +174,11 @@ within the sitepackage. There are two options:
     //
     // Project setup
     // ------------------------------------------
-    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Config/*.typoscript'
-    @import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
-    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Lib/*.typoscript'
-    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Extensions/*.typoscript'
-    #@import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/ContentElements/*.typoscript'
-    @import 'EXT:basetemplate/Configuration/Sets/Basetemplate/TypoScript/Page/Page.typoscript'
+    @import './TypoScript/Config/*.typoscript'
+    @import './TypoScript/Lib/*.typoscript'
+    @import './TypoScript/Extensions/*.typoscript'
+    #@import './TypoScript/ContentElements/*.typoscript'
+    @import './TypoScript/Page/*.typoscript'
     ```
 
     *Note: remember to also import an extension's TypoScript constants in `constants.typoscript`, if given*
