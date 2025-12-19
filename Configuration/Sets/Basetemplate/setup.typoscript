@@ -8,7 +8,6 @@
 // Project setup
 // ------------------------------------------
 @import './TypoScript/Config/*.typoscript'
-@import 'EXT:basetemplate/Configuration/TypoScript/Helper/*.typoscript'
 @import './TypoScript/Lib/*.typoscript'
 @import './TypoScript/Extensions/*.typoscript'
 #@import './TypoScript/ContentElements/*.typoscript'

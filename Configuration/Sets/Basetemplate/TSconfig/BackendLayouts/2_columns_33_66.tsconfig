@@ -12,6 +12,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
+                                identifier = top
                                 name = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.top
                                 colspan = 3
                                 colPos = 10
@@ -22,12 +23,12 @@ mod.web_layout.BackendLayouts {
                     2 {
                         columns {
                             1 {
+                                identifier = sidebar
                                 name = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.sidebar
                                 colPos = 1
                             }
-
-
                             2 {
+                                identifier = main
                                 name = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.main
                                 colspan = 2
                                 colPos = 0
@@ -38,6 +39,7 @@ mod.web_layout.BackendLayouts {
                     3 {
                         columns {
                             1 {
+                                identifier = bottom
                                 name = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.bottom
                                 colspan = 3
                                 colPos = 20

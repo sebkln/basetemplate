@@ -192,24 +192,30 @@ and to deploy it to multiple web servers (e.g. Production, Staging, and Developm
 
 #### Using Backend layouts and Fluid templates
 
-For every column you create in a Backend layout, you have to set an **individual** `colPos` number.
-You should, however, **reuse** these values across your other Backend layouts.
-It allows the editors to change the layout of a page while keeping the content in place.
+The `page-content` data processor is used to render the contents of Backend layout columns in your Fluid templates.
 
-Set the `colPos` values wisely. The content of e.g. the top column shouldn't suddenly move to the bottom
-when changing layouts.
+For every column you create in a Backend layout, you have to assign an **individual** `colPos` number and `identifier`.
+
+- The `identifier` will be used in Fluid templates to render the content
+- The `colPos` number is still important to differentiate between columns in the backend layout (and the database)
+
+You should **reuse** these values across your other Backend layouts. Assign `colPos` and `ìdentifier` consistently!
+
+Consider the following example: Two Backend layouts with a wide main section and a narrow sidebar.
+When the editor changes the Backend layout, the content of the main section should still be rendered
+in the wider of the two columns (just on the opposite side of the page layout).
 
 ![BackendLayout, columns 66-33](Resources/Public/Images/BackendLayouts/BELayout_2_columns_66_33.svg)
-![BackendLayout, columns 50-50](Resources/Public/Images/BackendLayouts/BELayout_2_columns_50_50.svg)
+![BackendLayout, columns 50-50](Resources/Public/Images/BackendLayouts/BELayout_2_columns_33_66.svg)
 
-The TypoScript `lib.dynamicContent` will take care of rendering the desired column's content
-in your Fluid templates.
+Nonetheless, the `identifier` of the same `colPos` number might vary between Backend layouts.
+For example, the main column (`colPos = 0`) might be rendered with `identifier` "left" (or "middle"/"right") in a 3-column layout.
 
-All you have to do is insert the following `f:cObject` viewhelper into your Fluid template
-and adapt the `colPos` value:
+To render content of a column in Fluid, insert the following `f:render` viewhelper into your Fluid template
+and adapt the `pageContent.<column-identifier>.records` value:
 
 ````
-<f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+<f:render partial="Content/Default" arguments="{records: pageContent.main.records}"/>
 ````
 
 More details: [TYPO3 Sitepackage tutorial, Chapter 'Content Mapping'](https://docs.typo3.org/m/typo3/tutorial-sitepackage/main/en-us/ContentMapping/Index.html)

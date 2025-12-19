@@ -12,6 +12,7 @@ mod.web_layout.BackendLayouts {
                     1 {
                         columns {
                             1 {
+                                identifier = main
                                 name = LLL:EXT:basetemplate/Resources/Private/Language/locallang_be.xlf:BackendLayouts.column.main
                                 colPos = 0
                             }

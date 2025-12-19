@@ -5,20 +5,20 @@
     <!--TYPO3SEARCH_begin-->
     <div class="o-layout  o-layout--huge">
         <div class="o-layout__item  u-1/1  u-margin-bottom-huge">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '10'}"/>
+            <f:render partial="Content/Default" arguments="{records: pageContent.top.records}"/>
         </div>
 
 
         <div class="o-layout__item  u-1/1  u-1/2@desktop  u-1/3@wide  u-margin-bottom-huge">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '1'}"/>
+            <f:render partial="Content/Default" arguments="{records: pageContent.sidebar.records}"/>
         </div>
         <div class="o-layout__item  u-1/1  u-1/2@desktop  u-2/3@wide  u-margin-bottom-huge">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+            <f:render partial="Content/Default" arguments="{records: pageContent.main.records}"/>
         </div>
 
 
         <div class="o-layout__item  u-1/1">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '20'}"/>
+            <f:render partial="Content/Default" arguments="{records: pageContent.bottom.records}"/>
         </div>
     </div>
     <!--TYPO3SEARCH_end-->

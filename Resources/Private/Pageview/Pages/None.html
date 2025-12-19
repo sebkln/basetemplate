@@ -9,7 +9,7 @@
 
 <f:section name="PageContent">
     <!--TYPO3SEARCH_begin-->
-    <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+    <f:render partial="Content/Default" arguments="{records: pageContent.main.records}"/>
     <!--TYPO3SEARCH_end-->
 </f:section>
 </html>

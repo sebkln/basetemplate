@@ -5,7 +5,7 @@
     <!--TYPO3SEARCH_begin-->
     <div class="o-layout  o-layout--huge">
         <div class="o-layout__item  u-1/1">
-            <f:cObject typoscriptObjectPath="lib.dynamicContent" data="{colPos: '0'}"/>
+            <f:render partial="Content/Default" arguments="{records: pageContent.main.records}"/>
         </div>
     </div>
     <!--TYPO3SEARCH_end-->
