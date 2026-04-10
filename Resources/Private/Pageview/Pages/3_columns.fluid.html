@@ -5,23 +5,23 @@
     <!--TYPO3SEARCH_begin-->
     <div class="o-layout  o-layout--huge">
         <div class="o-layout__item  u-1/1  u-margin-bottom-huge">
-            <f:render partial="Content/Default" arguments="{records: pageContent.top.records}"/>
+            <f:render.contentArea contentArea="{content.top}"/>
         </div>
 
 
         <div class="o-layout__item  u-1/1  u-1/2@phablet  u-1/3@tablet  u-margin-bottom-huge">
-            <f:render partial="Content/Default" arguments="{records: pageContent.left.records}"/>
+            <f:render.contentArea contentArea="{content.left}"/>
         </div>
         <div class="o-layout__item  u-1/1  u-1/2@phablet  u-1/3@tablet  u-margin-bottom-huge">
-            <f:render partial="Content/Default" arguments="{records: pageContent.middle.records}"/>
+            <f:render.contentArea contentArea="{content.middle}"/>
         </div>
         <div class="o-layout__item  u-1/1  u-1/2@phablet  u-1/3@tablet  u-margin-bottom-huge">
-            <f:render partial="Content/Default" arguments="{records: pageContent.right.records}"/>
+            <f:render.contentArea contentArea="{content.right}"/>
         </div>
 
 
         <div class="o-layout__item  u-1/1">
-            <f:render partial="Content/Default" arguments="{records: pageContent.bottom.records}"/>
+            <f:render.contentArea contentArea="{content.bottom}"/>
         </div>
     </div>
     <!--TYPO3SEARCH_end-->

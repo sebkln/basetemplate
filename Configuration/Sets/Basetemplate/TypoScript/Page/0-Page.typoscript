@@ -45,10 +45,6 @@ page {
                 as = metaNavigation
             }
             */
-
-            // Load page content into the template:
-            30 = page-content
-            30.as = pageContent
         }
     }
 }
