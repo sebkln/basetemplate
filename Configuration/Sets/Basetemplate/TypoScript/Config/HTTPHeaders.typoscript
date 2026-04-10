@@ -30,5 +30,5 @@ config {
     // A more complex HTTP header which needs individual(!) configuration for each website.
     // More information: https://scotthelme.co.uk/content-security-policy-an-introduction/
     // ------------------------------------------
-    additionalHeaders.60.header = Content-Security-Policy: frame-ancestors 'none'
+    additionalHeaders.60.header = Content-Security-Policy: frame-ancestors 'self'
 }
