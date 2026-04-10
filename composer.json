@@ -1,7 +1,7 @@
 {
 	"name": "sebkln/basetemplate",
 	"type": "typo3-cms-extension",
-	"description": "Sitepackage Starter Kit for TYPO3 CMS. Contains website templates, assets, configuration and custom code for your TYPO3 project.",
+	"description": "Sitepackage Starter Kit for TYPO3 CMS - Contains website templates, assets, configuration and custom code for your TYPO3 project.",
 	"license": [
 		"GPL-2.0-or-later"
 	],
@@ -32,7 +32,13 @@
 	},
 	"extra": {
 		"typo3/cms": {
-			"extension-key": "basetemplate"
+			"extension-key": "basetemplate",
+			"version": "1.0.0",
+			"Package": {
+				"providesPackages": {
+					"symfony/dotenv": ""
+				}
+			}
 		}
 	}
 }
