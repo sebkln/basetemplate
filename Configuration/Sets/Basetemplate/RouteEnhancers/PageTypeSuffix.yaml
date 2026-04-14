@@ -6,7 +6,7 @@
 # - 1480321830: used for backend preview with EXT:yoast_seo
 #
 # More information:
-# https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Routing/AdvancedRoutingConfiguration.html#pagetype-decorator
+# https://docs.typo3.org/permalink/t3coreapi:routing-pagetype-decorator
 # https://www.sebkln.de/en/tutorials/routing-in-typo3-trailing-slash-or-html-suffix-in-url/
 #
 # IMPORTANT: If you use the PageType Decorator, the mapping becomes mandatory for all typeNum!

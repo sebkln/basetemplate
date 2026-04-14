@@ -1,0 +1,13 @@
+# These route enhancers will be automatically merged into the Site Configuration
+# when this Site Set is used as a dependency.
+# You can still override and extend the route enhancers
+# in your config/sites/<my_site>/config.yaml for individual sites,
+# for example:
+#   routeEnhancers:
+#    News:
+#      limitToPages:
+#        - 92
+#        - 93
+imports:
+  - { resource: 'RouteEnhancers/PageTypeSuffix.yaml' }
+#  - { resource: 'RouteEnhancers/News.yaml' }

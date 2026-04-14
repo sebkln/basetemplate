@@ -127,18 +127,15 @@ By default, the following settings are shipped:
 Read more about Site Settings in TYPO3:
 https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/SiteHandling/SiteSettings.html
 
-#### 3. Optional: Import preconfigured Route Enhancers
+#### 3. Adjust the preconfigured Route Enhancers
+
+Since TYPO3 v14, route enhancers can be provided via Site Sets. Route enhancers are automatically merged
+into the Site Configuration when a Site Set is used as a dependency.
 
 This extension contains commonly used configurations for page types and the news extension.
 
-You can import all or selected Route Enhancers into your `config/sites/<my_site>/config.yaml`
-(or copy their configuration):
-
-```
-imports:
-  -
-    resource: 'EXT:basetemplate/Configuration/Site/Routes/All.yaml'
-```
+Uncomment the route enhancer import for the news extension if needed:\
+`Configuration/Sets/Basetemplate/route-enhancers.yaml`
 
 Read more about Routing in TYPO3:
 https://docs.typo3.org/m/typo3/reference-coreapi/main/en-us/ApiOverview/Routing/Index.html
