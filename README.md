@@ -169,7 +169,7 @@ within the sitepackage. There are two options:
     //
     // Dependencies
     // ------------------------------------------
-    #@import 'EXT:news/Configuration/TypoScript/setup.typoscript'
+    #@import 'EXT:some_extension/Configuration/TypoScript/setup.typoscript'
 
 
     //
